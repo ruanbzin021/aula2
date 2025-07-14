@@ -2,6 +2,9 @@ faturamento = 1000
 custo = 700
 lucro = faturamento - custo
 
+numero = 15.57 #arredondar numero
+print(round(numero))
+
 print(f"Faturamento: {faturamento}\nCusto: {custo}\nLucro: {lucro}")
 
 #print("Faturamento: " + str(faturamento) + "\nCusto: " + str(custo) + "\nLucro: " + str(lucro))
