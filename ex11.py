@@ -12,3 +12,7 @@ print(f"O dobro do primeiro numero é: {int1}\nE a metade do segundo é: {int2}"
 triplo1 = int1 / 2 * 3
 triplo = triplo1 + real * 3
 print(f"A soma do triplo do primeiro com o triplo do segundo é: {triplo}")
+
+realc = real * real * real
+
+print(f"O terceiro elevado ao cubo é: {realc}")
