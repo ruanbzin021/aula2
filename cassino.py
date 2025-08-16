@@ -18,12 +18,19 @@ def animacao_rolagem():
 
 # Função principal do jogo
 def jogar():
-    creditos = 10
+    while True:
+        try:
+            creditos = int(input("🎰 Quantos créditos deseja usar? (máximo 10): "))
+            if 1 <= creditos <= 10:
+                break
+            else:
+                print("⚠️ Por favor, insira um número entre 1 e 10.")
+        except ValueError:
+            print("⚠️ Entrada inválida. Digite um número inteiro.")
+
     historico = []
 
-    print("\n🎰 Bem-vindo ao Tigrinho Slots! 🎰")
-    print("Você começa com 10 créditos.")
-    print("Boa sorte!\n")
+    print(f"\nVocê começou com {creditos} crédito(s). Boa sorte!\n")
 
     while creditos > 0:
         input(f"\n🪙 Créditos: {creditos} | Aperte Enter para girar...")
